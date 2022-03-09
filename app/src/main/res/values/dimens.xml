@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="colour_creator_layout_margin">8dp</dimen>
-    <dimen name="colour_creator_layout_panel">40dp</dimen>
+    <dimen name="colour_app_layout_margin">8dp</dimen>
+    <dimen name="colour_app_layout_panel">40dp</dimen>
 </resources>
