@@ -19,4 +19,9 @@
         <item name="android:layout_margin">8dp</item>
     </style>
 
+    <style name="colour_creator_title"
+        parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>
