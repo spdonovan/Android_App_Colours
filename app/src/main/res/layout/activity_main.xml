@@ -48,6 +48,68 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/green_channel_wrapper"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/green_channel"
+        app:layout_constraintTop_toBottomOf="@id/red_channel_wrapper"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/green_channel"
+            android:inputType="textCapCharacters"
+            android:digits="ABCDEFabcdef0123456789"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="2"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/blue_channel_wrapper"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/blue_channel"
+        app:layout_constraintTop_toBottomOf="@id/green_channel_wrapper"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/blue_channel"
+            android:inputType="textCapCharacters"
+            android:digits="ABCDEFabcdef0123456789"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="2"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/colour_app_layout_margin"
+        android:id="@+id/colour_app_button"
+        android:gravity="center"
+        android:text="@string/colour_app_button_text"
+        app:layout_constraintTop_toBottomOf="@id/blue_channel_wrapper"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/colour_app_display"
+            android:layout_width="match_parent"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:text="@string/colour_app_created_display"
+            android:gravity="center"
+            android:layout_height="@dimen/colour_app_layout_panel"
+            android:layout_margin="@dimen/colour_app_layout_margin"
+            app:layout_constraintTop_toBottomOf="@id/colour_app_button"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
